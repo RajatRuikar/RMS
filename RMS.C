@@ -192,13 +192,13 @@ int page1()
 		scanf("%d",&quantity);
 		break;
 
-	case 222: page2()
+	case 222: page2();
 	        break;
-	case 333: page3()
+	case 333: page3();
 	        break;	
 			
 	case 0: return(0);
-		break;
+		
 	    default : printf("======");
 	    break;
 	
@@ -228,7 +228,7 @@ int page2()
 	printf("\n11. ONION PARANTHA\t\t\t45");
 	printf("\n12. KEEMA PARANTHA\t\t\t80");
 	printf("\n13. MIRACH PARANTHA\t\t\t55");
-	printf("\n111. Page 1\t\t 333. Page 3");
+	printf("\n111. Page 1\t\t 333. Page 3\n0.Exit");
 	printf("\nEnter you choice:---");
 	scanf("%d",&dish);
 	
@@ -388,12 +388,12 @@ int page2()
 	        printf("\n Please Enter the Quantity:-");
 	        scanf("%d",&quantity);
 	        break;   
-	    case 111: page1()
+	    case 111: page1();
 	        break;
-	case 333: page3()
+	case 333: page3();
 	        break;	
 	case 0: return(0);
-		break;		
+			
 			
 	    default : printf("======");
 	    break;
@@ -411,23 +411,23 @@ int page3()
 	printf("\n--------------------------------------------------------------------------------");
 	printf("\t\t\tPAGE NO.3");
 	printf("\nPURE VEG:- \n");
-	printf("\n1. DAL MAKHANI\t\t\t15");
+	printf("\n1. DAL MAKHANI\t\t\t\t15");
 	printf("\n2. DAL TADKA\t\t\t\t20");
-	printf("\n3. SHAHI PANEER\t\t\t40");
+	printf("\n3. SHAHI PANEER\t\t\t\t40");
 	printf("\n4. KADAI PANEER\t\t\t\t45");
-	printf("\n5. PANEER PASANDA \t\t\t\t35");
-	printf("\n6. HANDI SPL. PANEER\t\t\t\t70");
-	printf("\n7. MUTTER MUSHROOM\t\t\t\t50");
-	printf("\n8. KADAI SOYA CHAP\t\t\t\t25");
+	printf("\n5. PANEER PASANDA \t\t\t35");
+	printf("\n6. HANDI SPL. PANEER\t\t\t70");
+	printf("\n7. MUTTER MUSHROOM\t\t\t50");
+	printf("\n8. KADAI SOYA CHAP\t\t\t25");
 	printf("\n9. TAWA SOYA CHAP\t\t\t60");
-	printf("\n10. MIXED VEG\t\t\t50");
-	printf("\n11. MALAI KOFTA\t\t\t45");
+	printf("\n10. MIXED VEG\t\t\t\t50");
+	printf("\n11. MALAI KOFTA\t\t\t\t45");
 	printf("\n12. MUTTER PANEER\t\t\t80");
-	printf("\n13. PANEER BUTTER MASALA\t\t\t55");
+	printf("\n13. PANEER BUTTER MASALA\t\t55");
 	printf("\n14. PANEER TIKKA MASALA\t\t\t55");
 	printf("\n15. MASALA AALOO\t\t\t55");
-	printf("\n16. JEERA AALOO\t\t\t55");
-	printf("\n111. Page 1\t\t 222. Page 2");
+	printf("\n16. JEERA AALOO\t\t\t\t55");
+	printf("\n111. Page 1\t\t 222. Page 2\n0.Exit");
 	printf("\nEnter you choice:---");
 	scanf("%d",&dish);
 	
@@ -622,13 +622,13 @@ int page3()
 	        scanf("%d",&quantity);
 	        break;
 			
-	case 111: page1()
+	case 111: page1();
 	        break;
-	case 222: page2()
+	case 222: page2();
 	        break;
 			
 	case 0: return(0);
-		break;
+		
 	    default : printf("======");
 	    break;
 	}
@@ -640,5 +640,7 @@ void main()
 	int a;
 	a=page1();
 	printf("%d",a);
+	
+	printf("Thank you for Visiting...!");
 	getch();
 }
