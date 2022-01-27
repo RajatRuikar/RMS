@@ -7,7 +7,7 @@
 
 int page1()
 {
-	int quantity,dish,q1;
+	int quantity,dish,q1,c;
 	label :
 	printf("\t\t\tPAGE no.1");
 	printf("\nNon-VEG Starter's:- \n\n\n\t\t\t\tFULL\tHALF");
@@ -24,6 +24,7 @@ int page1()
 	printf("\n11. CHICKEN SEEKH KABAB\t\t230\t120");
 	printf("\n12. FISH PAMPHLIT\t\t330\t---");
 	printf("\n13. FISH TIKKA\t\t\t280\t---");
+	printf("Enter you choice:---");
 	scanf("%d",&dish);
 
 	switch(dish)
@@ -31,6 +32,8 @@ int page1()
 		case 1 : printf("TANDOORI CHICKEN");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
+		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
+		scanf("%d",&c);
 		if(q1>2)
 		{
 		    goto label;
@@ -42,6 +45,8 @@ int page1()
 	     case 2 : printf("AFGANI CHICKEN");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
+		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
+		scanf("%d",&c);
 		if(q1>2)
 		{
 		    goto label;
@@ -52,6 +57,8 @@ int page1()
 	    case 3 : printf("CHICKEN TANGRI");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
+		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
+		scanf("%d",&c);
 		if(q1>2)
 		{
 		    goto label;
@@ -62,6 +69,8 @@ int page1()
 	    case 4 : printf("AFGANI MALAI TIKKA");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
+		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
+		scanf("%d",&c);
 		if(q1>2)
 		{
 		    goto label;
@@ -72,6 +81,8 @@ int page1()
 	    case 5 : printf("CHICKEN MALAI TIKKA");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
+		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
+		scanf("%d",&c);
 		if(q1>2)
 		{
 		    goto label;
@@ -82,6 +93,8 @@ int page1()
 	    case 6 : printf("CHICKEN HARIYANA TIKKA");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
+		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
+		scanf("%d",&c);
 		if(q1>2)
 		{
 		    goto label;
@@ -92,6 +105,8 @@ int page1()
 	    case 7 : printf("KALMI KABAB");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
+		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
+		scanf("%d",&c);
 		if(q1>2)
 		{
 		    goto label;
@@ -102,6 +117,8 @@ int page1()
 	    case 8 : printf("MUTTON KABAB");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
+		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
+		scanf("%d",&c);
 		if(q1>2)
 		{
 		    goto label;
@@ -112,6 +129,8 @@ int page1()
 	    case 9 : printf("MUTTON SEEKH KABAB");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
+		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
+		scanf("%d",&c);
 		if(q1>2)
 		{
 		    goto label;
@@ -122,6 +141,8 @@ int page1()
 	    case 10 : printf("MUTTON BARRA");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
+		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
+		scanf("%d",&c);
 		if(q1>2)
 		{
 		    goto label;
@@ -132,6 +153,8 @@ int page1()
 	    case 11 : printf("CHICKEN SEEKH KABAB");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
+		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
+		scanf("%d",&c);
 		if(q1>2)
 		{
 		    goto label;
@@ -142,6 +165,8 @@ int page1()
 	    case 12 : printf("FISH PAMPHLIT");
 		printf("\n1.Full\n2.Exit\n");
 		scanf("%d",&q1);
+		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
+		scanf("%d",&c);
 		if(q1>2)
 		{
 		    goto label;
@@ -152,6 +177,8 @@ int page1()
 	    case 13: printf("FISH TIKKA");
 		printf("\n1.Full\n2.Exit\n");
 		scanf("%d",&q1);
+		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
+		scanf("%d",&c);
 		if(q1>2)
 		{
 		    goto label;
@@ -184,15 +211,14 @@ int page2()
 	printf("\n11. ONION PARANTHA\t\t\t45");
 	printf("\n12. KEEMA PARANTHA\t\t\t80");
 	printf("\n13. MIRACH PARANTHA\t\t\t55");
-	printf("\nPAGE NO.2\n");
+	printf("Enter you choice:---");
 	scanf("%d",&dish);
 	
 
 	switch(dish)
 	{
 		case 1 : printf("TANDOORI ROTI");
-	        printf("\n1.CONFIRM\n2.Exit"); 	        
-	        
+	        printf("\n1.CONFIRM\nPress any key to go back\n"); 	      
 	        scanf("%d",&q1);
 	        if(q1>2)
 	        {
@@ -204,7 +230,7 @@ int page2()
 	        
 	        
 	     case 2 : printf("BUTTER ROTI");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	       
 	        scanf("%d",&q1);
 	        if(q1>2)
@@ -217,7 +243,7 @@ int page2()
 	        
 	        
 	    case 3 : printf("LACHHA PARANTHA");
-	       printf("\n1.CONFIRM\n2.Exit"); 	
+	       printf("\n1.CONFIRM\nPress any key to go back\n"); 	
 		scanf("%d",&q1);
 		if(q1>2)
 		{
@@ -229,7 +255,7 @@ int page2()
 
 
 	    case 4 : printf("BUTTER NAAN");
-		printf("\n1.CONFIRM\n2.Exit");
+		printf("\n1.CONFIRM\nPress any key to go back\n");
 		scanf("%d",&q1);
 		if(q1>2)
 		{
@@ -239,7 +265,7 @@ int page2()
 	       scanf("%d",&quantity);
 		break;
 	    case 5 : printf("PLAIN NAAN");
-		printf("\n1.CONFIRM\n2.Exit");
+		printf("\n1.CONFIRM\nPress any key to go back\n");
 		printf("\n Please Enter the Quantity:-");
 		scanf("%d",&quantity);
 		scanf("%d",&q1);
@@ -251,7 +277,7 @@ int page2()
 
 
 	    case 6 : printf("KEEMA NAAN");
-		printf("\n1.CONFIRM\n2.Exit");
+		printf("\n1.CONFIRM\nPress any key to go back\n");
 		scanf("%d",&q1);
 		if(q1>2)
 		{
@@ -263,7 +289,7 @@ int page2()
 
 
 	    case 7 : printf("GARLIC NAAN");
-		printf("\n1.CONFIRM\n2.Exit");
+		printf("\n1.CONFIRM\nPress any key to go back\n");
 		scanf("%d",&q1);
 		if(q1>2)
 		{
@@ -275,7 +301,7 @@ int page2()
 
 
 	    case 8 : printf("ROOMALI ROTI");
-		printf("\n1.CONFIRM\n2.Exit");
+		printf("\n1.CONFIRM\nPress any key to go back\n");
 		scanf("%d",&q1);
 		if(q1>2)
 		{
@@ -287,7 +313,7 @@ int page2()
 
 
 	    case 9 : printf("PANEER PARANTHA");
-		printf("\n1.CONFIRM\n2.Exit");
+		printf("\n1.CONFIRM\nPress any key to go back\n");
 		scanf("%d",&q1);
 		if(q1>2)
 		{
@@ -299,7 +325,7 @@ int page2()
 
 
 	    case 10 : printf("ALOO PARANTHA");
-		printf("\n1.CONFIRM\n2.Exit");
+		printf("\n1.CONFIRM\nPress any key to go back\n");
 		scanf("%d",&q1);
 		if(q1>2)
 		{
@@ -311,7 +337,7 @@ int page2()
 
 	        
 	    case 11 : printf("ONION PARANTHA");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	        scanf("%d",&q1);
 	        if(q1>2)
 	        {
@@ -323,7 +349,7 @@ int page2()
 	        
 	        
 	    case 12 : printf("KEEMA PARANTHA");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	        scanf("%d",&q1);
 	        if(q1>2)
 	        {
@@ -335,7 +361,7 @@ int page2()
 	        
 	        
 	    case 13: printf("MIRACH PARANTHA");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	        scanf("%d",&q1);
 	        if(q1>2)
 	        {
@@ -380,7 +406,7 @@ int page3()
 	switch(dish)
 	{
 		case 1 : printf("DAL MAKHANI");
-	        printf("\n1.CONFIRM\n2.Exit"); 	        
+	        printf("\n1.CONFIRM\nPress any key to go back\n"); 	        
 	        
 	        scanf("%d",&q1);
 	        if(q1>2)
@@ -393,7 +419,7 @@ int page3()
 	        
 	        
 	     case 2 : printf("DAL TADKA");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	       
 	        scanf("%d",&q1);
 	        if(q1>2)
@@ -406,7 +432,7 @@ int page3()
 	        
 	        
 	    case 3 : printf("SHAHI PANEER");
-	       printf("\n1.CONFIRM\n2.Exit"); 	
+	       printf("\n1.CONFIRM\nPress any key to go back\n"); 	
 	        scanf("%d",&q1);
 	        if(q1>2)
 	        {
@@ -418,7 +444,7 @@ int page3()
 	        
 	        
 	    case 4 : printf("KADAI PANEER");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	        scanf("%d",&q1);
 	        if(q1>2)
 	        {
@@ -428,7 +454,7 @@ int page3()
 	       scanf("%d",&quantity);
 	        break;   
 	    case 5 : printf("PANEER PASANDA");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	        printf("\n Please Enter the Quantity:-");
 	        scanf("%d",&quantity);
 	        scanf("%d",&q1);
@@ -440,7 +466,7 @@ int page3()
 	        
 	        
 	    case 6 : printf("HANDI SPL. PANEER");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	        scanf("%d",&q1);
 	        if(q1>2)
 	        {
@@ -452,7 +478,7 @@ int page3()
 	        
 	        
 	    case 7 : printf("MUTTER MUSHROOM");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	        scanf("%d",&q1);
 	        if(q1>2)
 	        {
@@ -464,7 +490,7 @@ int page3()
 	        
 	        
 	    case 8 : printf("KADAI SOYA CHAP");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	        scanf("%d",&q1);
 	        if(q1>2)
 	        {
@@ -476,7 +502,7 @@ int page3()
 	        
 	        
 	    case 9 : printf("TAWA SOYA CHAP");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	        scanf("%d",&q1);
 	        if(q1>2)
 	        {
@@ -488,7 +514,7 @@ int page3()
 	        
 	        
 	    case 10 : printf("MIXED VEG");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	        scanf("%d",&q1);
 	        if(q1>2)
 	        {
@@ -500,7 +526,7 @@ int page3()
 	        
 	        
 	    case 11 : printf("MALAI KOFTA");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	        scanf("%d",&q1);
 	        if(q1>2)
 	        {
@@ -512,7 +538,7 @@ int page3()
 	        
 	        
 	    case 12 : printf("MUTTER PANEER");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	        scanf("%d",&q1);
 	        if(q1>2)
 	        {
@@ -524,7 +550,7 @@ int page3()
 	        
 	        
 	    case 13: printf("PANEER BUTTER MASALA");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	        scanf("%d",&q1);
 	        if(q1>2)
 	        {
@@ -535,7 +561,7 @@ int page3()
 	        break;   
 	    
 	    case 14: printf("PANEER TIKKA MASALA");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	        scanf("%d",&q1);
 	        if(q1>2)
 	        {
@@ -546,7 +572,7 @@ int page3()
 	        break;
 	        
         case 15: printf("MASALA AALOO");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	        scanf("%d",&q1);
 	        if(q1>2)
 	        {
@@ -557,7 +583,7 @@ int page3()
 	        break;
 	   
 	   case 16: printf("JEERA AALOO");
-	        printf("\n1.CONFIRM\n2.Exit");
+	        printf("\n1.CONFIRM\nPress any key to go back\n");
 	        scanf("%d",&q1);
 	        if(q1>2)
 	        {
