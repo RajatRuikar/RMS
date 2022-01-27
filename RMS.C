@@ -9,6 +9,10 @@ int page1()
 {
 	int quantity,dish,q1,c;
 	label :
+	clrscr();
+	printf("\n\t\t\t Hello Welcome To Our Restaurant");
+	printf("\n\t\t\t\t    Family Time");
+	printf("\n--------------------------------------------------------------------------------");
 	printf("\t\t\tPAGE no.1");
 	printf("\nNon-VEG Starter's:- \n\n\n\t\t\t\tFULL\tHALF");
 	printf("\n1. TANDOORI CHICKEN\t\t360\t200");
@@ -24,7 +28,8 @@ int page1()
 	printf("\n11. CHICKEN SEEKH KABAB\t\t230\t120");
 	printf("\n12. FISH PAMPHLIT\t\t330\t---");
 	printf("\n13. FISH TIKKA\t\t\t280\t---");
-	printf("Enter you choice:---");
+	printf("\n222. Page 2\t\t 333. Page 3\n0.EXIT");
+	printf("\nEnter you choice:---");
 	scanf("%d",&dish);
 
 	switch(dish)
@@ -187,8 +192,16 @@ int page1()
 		scanf("%d",&quantity);
 		break;
 
+	case 222: page2()
+	        break;
+	case 333: page3()
+	        break;	
+			
+	case 0: return(0);
+		break;
 	    default : printf("======");
 	    break;
+	
 	}
 	return(dish);
 }
@@ -196,6 +209,10 @@ int page2()
 {
 	int quantity,dish,q1;
 	label :
+	clrscr();
+	printf("\n\t\t\t Hello Welcome To Our Restaurant");
+	printf("\n\t\t\t\t    Family Time");
+	printf("\n--------------------------------------------------------------------------------");
 	printf("\t\t\tPAGE NO.2");
 	printf("\nBREAD's:- \n");
 	printf("\n1. TANDOORI ROTI\t\t\t15");
@@ -211,7 +228,8 @@ int page2()
 	printf("\n11. ONION PARANTHA\t\t\t45");
 	printf("\n12. KEEMA PARANTHA\t\t\t80");
 	printf("\n13. MIRACH PARANTHA\t\t\t55");
-	printf("Enter you choice:---");
+	printf("\n111. Page 1\t\t 333. Page 3");
+	printf("\nEnter you choice:---");
 	scanf("%d",&dish);
 	
 
@@ -370,7 +388,13 @@ int page2()
 	        printf("\n Please Enter the Quantity:-");
 	        scanf("%d",&quantity);
 	        break;   
-	    
+	    case 111: page1()
+	        break;
+	case 333: page3()
+	        break;	
+	case 0: return(0);
+		break;		
+			
 	    default : printf("======");
 	    break;
 	}
@@ -381,6 +405,10 @@ int page3()
 {
 	int quantity,dish,q1;
 	label :
+	clrscr();
+	printf("\n\t\t\t Hello Welcome To Our Restaurant");
+	printf("\n\t\t\t\t    Family Time");
+	printf("\n--------------------------------------------------------------------------------");
 	printf("\t\t\tPAGE NO.3");
 	printf("\nPURE VEG:- \n");
 	printf("\n1. DAL MAKHANI\t\t\t15");
@@ -399,7 +427,8 @@ int page3()
 	printf("\n14. PANEER TIKKA MASALA\t\t\t55");
 	printf("\n15. MASALA AALOO\t\t\t55");
 	printf("\n16. JEERA AALOO\t\t\t55");
-	printf("Enter you choice:---");
+	printf("\n111. Page 1\t\t 222. Page 2");
+	printf("\nEnter you choice:---");
 	scanf("%d",&dish);
 	
 
@@ -592,6 +621,14 @@ int page3()
 	        printf("\n Please Enter the Quantity:-");
 	        scanf("%d",&quantity);
 	        break;
+			
+	case 111: page1()
+	        break;
+	case 222: page2()
+	        break;
+			
+	case 0: return(0);
+		break;
 	    default : printf("======");
 	    break;
 	}
@@ -601,10 +638,6 @@ int page3()
 void main()
 {
 	int a;
-	clrscr();
-	printf("\n\t\t\t Hello Welcome To Our Restaurant");
-	printf("\n\t\t\t\t    Family Time");
-	printf("\n--------------------------------------------------------------------------------");
 	a=page1();
 	printf("%d",a);
 	getch();
