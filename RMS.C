@@ -638,7 +638,7 @@ int page3()
 void main()
 {
 	int a;
-	a=page1();
+	a=page1(); //going to the first page of the rms
 	printf("%d",a);
 	
 	printf("Thank you for Visiting...!");
