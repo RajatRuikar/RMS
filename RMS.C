@@ -5,7 +5,7 @@
 #include<stdlib.h>
 #include<dos.h>
 
-int page1()
+int page1() //Page 1 contains this item
 {
 	int quantity,dish,q1,c;
 	label :
@@ -659,5 +659,7 @@ void main()
 	printf("%d",a);
 	
 	printf("Thank you for Visiting...!");
+	printf("/nPlease come next time also Thankyou!");
+	printf("/nHave a great day ahead");
 	getch();
 }
