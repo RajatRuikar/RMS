@@ -5,15 +5,17 @@
 #include<stdlib.h>
 #include<dos.h>
 
-int page1()
+int page1() //Page 1 contains this item
 {
 	int quantity,dish,q1,c;
 	label :
 	clrscr();
 	printf("\n\t\t\t Hello Welcome To Our Restaurant");
+	printf("Welcome to our varities of Delicious Cuisine World");
 	printf("\n\t\t\t\t    Family Time");
 	printf("\n--------------------------------------------------------------------------------");
 	printf("\t\t\tPAGE no.1");
+	printf("\tHere we go for our Menu");
 	printf("\nNon-VEG Starter's:- \n\n\n\t\t\t\tFULL\tHALF");
 	printf("\n1. TANDOORI CHICKEN\t\t360\t200");
 	printf("\n2. AFGANI CHICKEN\t\t400\t220");
@@ -35,6 +37,7 @@ int page1()
 	switch(dish)
 	{
 		case 1 : printf("TANDOORI CHICKEN");
+		printf("How much quantity you need");	
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
 		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
@@ -48,6 +51,7 @@ int page1()
 		scanf("%d",&quantity);
 		break;
 	     case 2 : printf("AFGANI CHICKEN");
+	        printf("How much quantity you need");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
 		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
@@ -60,6 +64,7 @@ int page1()
 		scanf("%d",&quantity);
 		break;
 	    case 3 : printf("CHICKEN TANGRI");
+		printf("How much quantity you need");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
 		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
@@ -72,6 +77,7 @@ int page1()
 		scanf("%d",&quantity);
 		break;
 	    case 4 : printf("AFGANI MALAI TIKKA");
+		printf("How much quantity you need");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
 		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
@@ -84,6 +90,7 @@ int page1()
 		scanf("%d",&quantity);
 		break;
 	    case 5 : printf("CHICKEN MALAI TIKKA");
+		printf("How much quantity you need");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
 		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
@@ -96,6 +103,7 @@ int page1()
 		scanf("%d",&quantity);
 		break;
 	    case 6 : printf("CHICKEN HARIYANA TIKKA");
+		printf("How much quantity you need");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
 		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
@@ -108,6 +116,7 @@ int page1()
 		scanf("%d",&quantity);
 		break;
 	    case 7 : printf("KALMI KABAB");
+		printf("How much quantity you need");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
 		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
@@ -120,6 +129,7 @@ int page1()
 		scanf("%d",&quantity);
 		break;
 	    case 8 : printf("MUTTON KABAB");
+		printf("How much quantity you need");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
 		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
@@ -132,6 +142,7 @@ int page1()
 		scanf("%d",&quantity);
 		break;
 	    case 9 : printf("MUTTON SEEKH KABAB");
+		printf("How much quantity you need");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
 		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
@@ -144,6 +155,7 @@ int page1()
 		scanf("%d",&quantity);
 		break;
 	    case 10 : printf("MUTTON BARRA");
+		printf("How much quantity you need");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
 		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
@@ -156,6 +168,7 @@ int page1()
 		scanf("%d",&quantity);
 		break;
 	    case 11 : printf("CHICKEN SEEKH KABAB");
+		printf("How much quantity you need");
 		printf("\n1.Full\n2.Half\n3.Exit\n");
 		scanf("%d",&q1);
 		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
@@ -168,6 +181,7 @@ int page1()
 		scanf("%d",&quantity);
 		break;
 	    case 12 : printf("FISH PAMPHLIT");
+		printf("How much quantity you need");
 		printf("\n1.Full\n2.Exit\n");
 		scanf("%d",&q1);
 		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
@@ -180,6 +194,7 @@ int page1()
 		scanf("%d",&quantity);
 		break;
 	    case 13: printf("FISH TIKKA");
+		printf("How much quantity you need");
 		printf("\n1.Full\n2.Exit\n");
 		scanf("%d",&q1);
 		printf("\n1.Confirm. \nPress Any key to Cancel.\n");
@@ -211,6 +226,7 @@ int page2()
 	label :
 	clrscr();
 	printf("\n\t\t\t Hello Welcome To Our Restaurant");
+	printf("Welcome to our varities of Delicious Cuisine World");
 	printf("\n\t\t\t\t    Family Time");
 	printf("\n--------------------------------------------------------------------------------");
 	printf("\t\t\tPAGE NO.2");
@@ -407,6 +423,7 @@ int page3()
 	label :
 	clrscr();
 	printf("\n\t\t\t Hello Welcome To Our Restaurant");
+	printf("Welcom to our varities of Delicious Cuisine World");
 	printf("\n\t\t\t\t    Family Time");
 	printf("\n--------------------------------------------------------------------------------");
 	printf("\t\t\tPAGE NO.3");
@@ -642,5 +659,7 @@ void main()
 	printf("%d",a);
 	
 	printf("Thank you for Visiting...!");
+	printf("/nPlease come next time also Thankyou!");
+	printf("/nHave a great day ahead");
 	getch();
 }
